@@ -94,6 +94,7 @@ public class HotelRepository {
             }
         }
         hotel.setFacilities(currFacility);
+        hotelDb.put(hotelName,hotel);
         return hotel;
     }
 }
