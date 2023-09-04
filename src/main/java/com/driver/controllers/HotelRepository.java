@@ -62,6 +62,7 @@ public class HotelRepository {
         int price = noofroomtobeboked*priceofroom;
         hotelDb.get(hname).setAvailableRooms(roomavaiable - noofroomtobeboked);
         bookingDb.put(bookid,booking);
+        hotelDb.put(hname,hotelDb.get(hname));
 
         return price;
     }
