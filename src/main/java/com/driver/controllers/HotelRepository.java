@@ -26,7 +26,7 @@ public class HotelRepository {
             return "FAILURE";
         }
         hotelDb.put(hotel.getHotelName(),hotel);
-        return "SUCCESS ";
+        return "SUCCESS";
     }
 
     public Integer addUser(User user) {
